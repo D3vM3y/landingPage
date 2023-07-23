@@ -118,13 +118,37 @@ nav ul {
     font-size: 0.75rem;
 }
 
-.about {
+.about-fact div {
+    text-align: center;
+}
+
+.about, .shop {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
 }
 
-.about-fact img {
+.about-fact img, .shop img {
     width: 100%;
     height: 100%;
+}
+
+.shop div {
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+button {
+    width: 8rem;
+    height: 2.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: solid 2px var(--secondary);
+    color: var(--secondary);
+    background-color: #fff;
+}
+
+button:hover {
+    background-color: var(--secondary);
+    color: #fff;
 }
