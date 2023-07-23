@@ -3,6 +3,15 @@ body {
     overflow: hidden;
 }
 
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, button, a, span, li {
+    font-family: 'Lato', sans-serif;
+}
+
+
 .wrapper {
     height: 100vh;
     overflow-y: auto;
