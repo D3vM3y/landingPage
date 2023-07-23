@@ -1,6 +1,12 @@
+:root {
+    --primary: #333333;
+    --secondary: #B24344;
+}
+
 body {
     margin: 0;
     overflow: hidden;
+    color: var(--primary);
 }
 
 h1, h2, h3 {
@@ -23,8 +29,8 @@ p, button, a, span, li {
 nav {
     display: flex;
     height: 40px;
-    background-color: black;
-    color: white;
+    background-color: var(--primary);
+    color: #fff;
 }
 
 nav ul {
@@ -64,8 +70,7 @@ nav ul {
 }
 
 .title {
-    font-size: 7rem;
-    color: white;
+    font-size: 2rem;
     text-shadow: 0 0 5px black;
 }
 
@@ -73,6 +78,5 @@ nav ul {
     font-size: 2rem;
     padding: 2rem;
     background-color: black;
-    color: white;
 }
 
