@@ -3,6 +3,20 @@
     --secondary: #B24344;
 }
 
+/* media querries and screen sizes */
+
+/* 
+600px phones
+768px tablets
+992px laptops
+1200px large desktops
+
+
+
+width: fit-content;
+*/
+
+
 body {
     margin: 0;
     overflow: hidden;
