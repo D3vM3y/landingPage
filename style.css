@@ -52,6 +52,11 @@ nav ul {
     z-index: -1;
 }
 
+.hero-text {
+    margin-bottom: 80%;
+    filter: drop-shadow(2px 4px 6px #fff);
+}
+
 .background {
     transform: translateZ(-10px) scale(1);
     margin-right: 90%;
@@ -73,15 +78,15 @@ nav ul {
 
 .title {
     /* text-shadow: 0 0 5px black; */
-    position: absolute;
-    top: 180px;
+    /* position: absolute;
+    top: 180px; */
     font-size: 2rem;
 }
 
 .hero-p {
-    position: relative;
-    top: -180px;
-    left: -60px;
+    /* position: relative; */
+    /* top: -180px;
+    left: -60px; */
     font-size: 1rem;
 }
 
