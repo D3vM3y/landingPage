@@ -14,6 +14,7 @@ body {
 
 section {
     padding: 1em;
+    margin-bottom: 2em;
 }
 
 h1, h2, h3 {
@@ -35,8 +36,18 @@ h3, p {
     font-size: clamp(.75rem, .5rem + 2vw, 5rem);
 }
 
+a {
+    font-size: 1em;
+}
+
+p {
+    margin: 0;
+}
+
 img {
-    max-width: 100%;
+    /* max-width: 100%;
+    width: 24em; */
+    width: clamp(16em, 60%, 100%);
 }
 
 ul {
@@ -58,8 +69,8 @@ button {
     color: var(--secondary);
     background-color: #fff;
     border: .125em solid var(--secondary);
-    width: 8em;
-    height: 2em;
+    width: clamp(8em, 30%, 50%);
+    font-size: clamp(1em, .25em + 2vw, 4em);
 }
 
 button:hover {
@@ -104,6 +115,17 @@ button:hover {
     font-size: clamp(.75rem, .5rem + 1.5vw, 5rem);
 }
 
+.hero img {
+    max-width: 100%;
+    width: auto;
+}
+
+.content, .about-fact, .about-fact div, .shop-content, .shop-content div, .product-fact div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    align-items: center;
+}
 
 .product-fact {
     display: flex;
@@ -116,14 +138,99 @@ button:hover {
 }
 
 .product-fact img {
-    max-width: 50%;
+    width: clamp(9em, 30%, 100%);
 }
 
 .sm-ico {
     display: inline-block;
+}
+
+.sm-ico a {
+    display: inline-block;
     margin: 15px;
 }
 
-.sm-ico:hover {
+.sm-ico a:hover {
     fill: var(--secondary);
+}
+
+.align-right {
+
+}
+
+.align-left {
+
+}
+
+@media (min-width: 40em) {
+    h2, h3, p {
+        text-align: left;
+    }
+
+
+    .content {
+        align-items: start;
+    }
+
+    .about-fact, .shop-content {
+        flex-direction: row;
+    }
+
+    .about-fact, .about-fact div, .shop-content, .product-fact, .product-fact div, .shop-content div {
+        column-gap: 2em;
+        align-items: start;
+    }
+    
+    .shop-content div {
+        row-gap: 4em;
+    }
+
+    section, footer {
+        margin-bottom: 5em;
+    }
+
+    footer.content {
+        align-items: center;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        text-transform: uppercase;
+    }
+
+    .footer-links li {
+        padding: 2px 0;
+    }
+
+    .vertical-divider {
+        border: black 1px solid;
+        width: 0.5px;
+        height: 180px;
+        margin: 0 10px;
+        background: black;
+    }
+
+    .navigation {
+        text-align: right;
+    }
+
+    .legal {
+        text-align: left;
+    }
+}
+
+@media (min-width: 60em) {
+    a {
+        font-size: clamp(1rem, .5rem + 2vw, 5rem);
+    }
+
+    .about-fact, .shop-content, .product-fact, .product-fact div, .shop-content div, .footer-links {
+        column-gap: 4em;
+    }
+
+    section, footer {
+        margin-bottom: 20em;
+    }
 }
