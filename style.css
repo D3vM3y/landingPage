@@ -216,7 +216,7 @@ button:hover {
     fill: var(--secondary);
 }
 
-footer.content {
+.footer {
     row-gap: 0;
 }
 
@@ -268,7 +268,7 @@ footer.content {
         row-gap: 4em;
     }
 
-    footer.content {
+    .footer {
         align-items: center;
     }
 
@@ -328,7 +328,7 @@ footer.content {
         column-gap: 4em;
     }
 
-    section, footer {
+    section, .footer {
         margin-bottom: 10em;
     }
 }
