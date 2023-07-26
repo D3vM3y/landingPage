@@ -153,11 +153,11 @@ button:hover {
 
 .product-fact {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    align-items: flex-start;
-    text-align: left;
+    align-items: center;
+    text-align: center;
     column-gap: 0.5em;
 }
 
