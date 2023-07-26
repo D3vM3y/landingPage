@@ -14,7 +14,6 @@ body {
 
 section {
     padding: 1em;
-    margin-bottom: 2em;
 }
 
 h1, h2, h3 {
@@ -170,7 +169,20 @@ button:hover {
     font-size: clamp(.75rem, .5rem + 1.5vw, 5rem);
 }
 
-.content, .about-fact, .about-fact div, .shop-content, .shop-content div, .product-fact div {
+.content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    align-items: center;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+}
+
+.about-fact, .about-fact div, .shop-content, .shop-content div, .product-fact div {
     display: flex;
     flex-direction: column;
     row-gap: 1em;
@@ -204,19 +216,19 @@ button:hover {
     fill: var(--secondary);
 }
 
-.align-right {
-
+footer.content {
+    row-gap: 0;
 }
 
-.align-left {
-
-}
 
 @media (min-width: 40em) {
     h2, h3, p {
         text-align: left;
     }
 
+    .nav-links {
+        padding: 1em 2em 1em 0;
+    }
 
     .content {
         align-items: start;
@@ -226,6 +238,8 @@ button:hover {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        height: 6em;
+        padding-right: 2em;
     }
 
     .topnav a:first-child { 
@@ -234,13 +248,14 @@ button:hover {
 
     .topnav a:not(:first-child) {
         display: block;
+        align-self: center;
     }
 
     .topnav a.icon {
         display: none;
     }
 
-    .about-fact, .shop-content {
+    .shop-content, .product-fact {
         flex-direction: row;
     }
 
@@ -251,10 +266,6 @@ button:hover {
     
     .shop-content div {
         row-gap: 4em;
-    }
-
-    section, footer {
-        margin-bottom: 5em;
     }
 
     footer.content {
@@ -301,8 +312,16 @@ button:hover {
 }
 
 @media (min-width: 60em) {
+    h3 {
+        margin: 1em 0;
+    }
+
     a {
         font-size: clamp(1rem, .5rem + 2vw, 5rem);
+    }
+
+    .content, .content-container {
+        row-gap: 8em;
     }
 
     .about-fact, .shop-content, .product-fact, .product-fact div, .shop-content div, .footer-links {
@@ -310,7 +329,7 @@ button:hover {
     }
 
     section, footer {
-        margin-bottom: 20em;
+        margin-bottom: 10em;
     }
 }
 
